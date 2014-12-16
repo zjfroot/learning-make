@@ -76,4 +76,5 @@ include include1.mk
 
 .PHONY: all
 all:
+	$(info $(MAKE))
 	$(start-banner)

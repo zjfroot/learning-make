@@ -1,0 +1,3 @@
+What the heck is make doing by checking RCS and SCCS?
+
+strace -estat make -f mf2.mk
