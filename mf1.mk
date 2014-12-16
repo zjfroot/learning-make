@@ -70,12 +70,9 @@ PASSWD_SIZE = $(call file_size,/etc/passwd)
 $(info $(PASSWD_SIZE))
 
 
-#use define directive
-define start-banner
-	@echo =====================
-	@echo Starting build
-	@echo =====================
-endef
+#Any rules and variables defined inside the included file are treat-
+#ed as if they’re actually written inside the main file.
+include include1.mk
 
 .PHONY: all
 all:
